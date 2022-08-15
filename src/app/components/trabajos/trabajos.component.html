@@ -1,0 +1,86 @@
+<app-cabeza></app-cabeza>
+<main>
+    <section class="sec1 content">
+        <h1>Descripcion de Nuestro Estudio</h1>
+        <div class="descripcion">
+            <img src="../../../assets/IMAGEN-ab/frases-de-abogados.jpg" alt="">
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>Brindar asistencia jurídica integral, transmitiendo seguridad y confianza a nuestros clientes con soluciones adecuadas a sus necesidades. Asimismo, lograr la realización personal y profesional de los miembros del Estudio, dentro de los más altos estándares éticos y de excelencia.</p>
+                <h3>Visión</h3>
+                <p>Posicionarnos como líder en el mercado legal Argentino, consolidando su crecimiento con experiencia y eficiencia profesional, ofreciendo un servicio integral de calidad en asesoría y consultoría legal, con reconocido prestigio por sus valores y eficacia demostrada.</p>
+            </div>                
+        </div>    
+    </section>
+    <section class="sec2 content">
+        <h3>Estudio Jurídico Abogados Asociados</h3>
+        <h1 class="titulo">AREAS DE ESPECIALIDAD</h1>
+        <div class="secionimagen">
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2014/08/penal.png" alt="">
+                <h4>PENAL</h4>
+            </div>
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2014/08/civil.png" alt="">
+                <h4>CIVIL</h4>
+            </div>
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2014/08/laboral.png" alt="">
+                <h4>LABORAL</h4>
+            </div>
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2021/03/familia-scaled.jpg" alt="">
+                <h4>FAMILIA</h4>
+            </div>
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2018/05/043-e1569377909656.jpg" alt="">
+                <h4>MIGRACION</h4>
+            </div>
+            <div class="cimagen">
+                <img src="https://estudioina.com.ar/wp-content/uploads/2013/01/defensadelconsumidor-e1569377059625.png" alt="">
+                <h4>DEFENSA AL CONSUMIDOR</h4>
+            </div>
+        </div>
+    </section>
+    <section class="sec3 content">
+        <h1>COMUNICATE CON NOSOTROS</h1>
+        <div class="contactos">
+            <div class="formulario">
+                <p>*Podes pedir un turno para asesorarte completando el Formulario*</p>
+                <form>
+                    <label for="">Apellido:</label><input type="text" class="w8"id="apellido"required><br>
+                    <label for="">Nombre:</label><input type="text"class="w8"id="nombre"required><br>
+                    <label for="">Fecha De Nacimiento</label><input type="date"id="calendario"><br><label for="">Edad:</label><input type="number"id="edad"required><br>
+                    <label for="">DNI:</label><input type="number"id="dni"required><br>
+                    <label for="">Cel:</label><span class="areas"style="color:#fff"> +54 (</span><input type="number"id="area"required><span style="color:#fff">) 15 -</span><input type="number"id="celular"required><br>
+                    <label for="">Email</label><input type="email"id="email"class="w8"required><br>
+                    <label>Tipo de Consulta:</label><input class="radio est"type="radio"name="estado"id="estados"required value="1" onclick="radios()"><span style="color:#fff">Presencial</span><input class="radio"type="radio" id="estados2" name="estado"required onclick="radios()"><span style="color:#fff">Remota</span><br>
+                    <label>Eliga como lo asesoramos</label>    <select name="consula"id="select" required disabled >
+                        </select><br>
+                    <label for="">Descripcion breve de la consulta</label><br>
+                    <textarea required></textarea ><br>
+                <div class="botones">
+                    <input type="submit"id="submit">
+                    <input type="reset"id="reset">
+                </div>
+                </form>
+            </div>                
+            <div class="informacion">
+                <h1>Contactos</h1> 
+                <h4 style="color:#fff"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-forward" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+                    </svg> Tel: 4235847856 / 43687854155 </h4>
+                <p style="color:#fff">*Dra. Rotta Ruiz <span style="color:rgb(154, 154, 228)">Interno*11</span> / Dr. Gonzales <span style="color:rgb(154, 154, 228)">Interno*12</span> / Dr. Diaz <span style="color:rgb(154, 154, 228)">Interno*13</span></p>
+                <h4 style="color:#fff"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg> Email: <a class="info"href="mailto:AbogadosAsociados@hotmail.com">AbogadosAsociados@hotmail.com</a> 
+                </h4>
+                <p style="color:#00e">* <a class="info" href="mailto:rottaruiz@hotmail.com">rottaruiz@hotmail.com</a> /<a class="info"href="mailto:gonzales@gmail.com"> gonzales@gmail.com</a> / <a class="info"href="mailto:diaz@hotmail.com">diaz@hotmail.com</a>*</p>
+                <h4 style="color:#fff">Direccion:  Av. Mate de Luna 4100</h4> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d113943.20867097944!2d-65.284796!3d-26.816875!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94225ce99cc7d4ad%3A0x9110243921042ff7!2sAv.%20Mate%20de%20Luna%204100%20t4100%2C%20T4100%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!3m2!1d-26.8250738!2d-65.2604774!5e0!3m2!1ses-419!2sar!4v1656093815851!5m2!1ses-419!2sar" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                   
+            </div>
+        </div>
+    </section>
+   
+</main>
+<app-tfooter></app-tfooter>

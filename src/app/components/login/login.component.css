@@ -1,0 +1,19 @@
+.card{border-radius: 25px;}
+.btnd{display:flex; width:100%;justify-content: center !important;}
+.lab{display: flex; justify-content: center !important; margin-top: 10px;}
+a:hover{color:rgb(0, 0, 209);}
+.Volver{display:flex;position:absolute;top:10px;left:20px;}
+.volve{
+    color:black;
+    padding:0;
+    background:transparent;
+    margin:0;
+    border:none;
+}
+.bi{font-size: 1.5rem;margin:0;}
+.on{display:visible}
+.off{display:none}
+.error{color:#f00;}
+.error1{border:1px solid #f00}
+.p1{display:flex;position:absolute; ;top:102px}
+.P2{display:flex;position:relative;top:0px;}

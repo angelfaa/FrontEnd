@@ -1,0 +1,66 @@
+<section class="background-radial-gradient overflow-hidden vh-100">
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start">
+    <div class="row gx-lg-5 align-items-center ">
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-2 px-md-5">
+            <form #f="ngForm" (ngSubmit)="registrar()" novalidate>
+              <div class="Volver">
+                <button class="volve" routerLink=""><i class="bi bi-arrow-bar-left"></i><span style="font-size:1.5rem">Inicio</span></button>
+              </div>
+              <h1 class="mb-4">Registrate</h1>
+              <div class="form-outline mb-3">
+                <input type="text" id="nombre" name="nombre" class="form-control" [(ngModel)]="nombre"required/>
+                <div class="lab">
+                  <label class="form-label" for="nombre">Nombre y Apellido</label>
+                </div>
+              </div>
+              <div class="form-outline mb-3">
+                <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario"required/>
+                <div class="lab">
+                  <label class="form-label" for="nombreUsuario">Nombre de Usuario</label>
+                </div>
+              </div>
+              <div class="form-outline mb-3">
+                <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email"required/>
+                <div class="lab">
+                  <label class="form-label" for="email">email</label>
+                </div>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password"required/>
+                <div class="lab">
+                  <label class="form-label" for="password">Password</label>
+                </div>
+              </div>
+              <div class="btnd">
+                <button type="submit" style="width: 49% ;height:40px" class="btn btn-outline-success ">
+                 <p>Crear cuenta</p>
+                </button>              
+                <button type="button"routerLink="/login" style="width: 49% ;height:40px" class="btn  btn-outline-primary mb-4">
+                  Iniciar Sesión
+                </button>
+              
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          Inicia sesión <br />
+          <span style="color: hsl(218, 81%, 75%)">O Crea una cuenta</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+          Si no tenes una cuenta completa los campo y luego clikea en el
+          boton que dice "CREAR CUENTA".<br>
+          Si ya tenes una clikea en el boton que dice "INICIAR SESION" para tener
+          acceso a tu perfil y poderlo modificarlo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

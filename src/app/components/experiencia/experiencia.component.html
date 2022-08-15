@@ -1,0 +1,61 @@
+<div class="row1">
+  <h1 class="titulo">Experiencia</h1>
+  <div><button type="button" class="btn btnex" routerLink="/nuevoexp" *ngIf="isLogged"><i
+        class="bi bi-plus-circle-fill"></i> Nueva Experiencia</button>
+  </div>
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 " *ngIf="!isLogged">
+          <h2>Experiencia</h2>
+        </div>
+        <div class="col-6 " *ngIf="!isLogged">
+          <h2>Descripcion</h2>
+        </div>
+        <div class="col-6 col-md-4" *ngIf="isLogged">
+          <h2>Experiencia</h2>
+        </div>
+        <div class="col-6 col-md-4" *ngIf="isLogged">
+          <h2>Descripcion</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6" *ngIf="!isLogged">
+          <h4>Trabajo1</h4>
+        </div>
+        <div class="col-6" *ngIf="!isLogged">
+          <p>descripcion del trabajo</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6" *ngIf="!isLogged">
+          <h4>Trabajo2</h4>
+        </div>
+        <div class="col-6" *ngIf="!isLogged">
+          <p>descripcion del trabajo 2</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div *ngFor="let Experiencia of cosas" class="row">
+        <div scope="col" *ngIf="isLogged" class="col-6 col-md-4">
+          <h4>{{Experiencia.nombreE}}</h4>
+        </div>
+        <div scope="col" *ngIf="isLogged" class="col-6 col-md-4">
+          <p>{{Experiencia.descripcionE}}</p>
+        </div>
+        <div scope="col" *ngIf="isLogged" class="col-6 col-md-2"><button class="btn btn btn-dark"
+            routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i> Editar</button>
+        </div>
+        <div scope="col" *ngIf="isLogged" class="col-6 col-md-2"> <button class="btn btn-danger"
+            (click)="delete(Experiencia.id)"><i class="bi bi-trash-fill"></i>Borrar</button>
+        </div>
+
+      </div>
+    </div>

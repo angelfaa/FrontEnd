@@ -1,0 +1,319 @@
+.sec1{margin-top: 80px;
+    min-height: 450px;
+    border-radius:10px;
+    border: 1px solid #000;
+    box-shadow:10px 7px 7px black;
+}
+.sec1 h1{
+    text-align: center;
+}
+.sec1 img{
+    width:40%;
+    margin-left:5%;
+    object-fit: cover;
+}
+.descripcion{
+    display:flex;
+}
+.mision{
+    width:40%;
+    margin:-10px 5%;
+    
+}
+.sec2{margin-top: 100px;}
+.secionimagen{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+.sec2 h1{
+    display:block;
+}
+.cimagen{
+    border: 1px solid #000;
+    width:27%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;  
+}
+.cimagen img{
+    margin:0;
+    display:flex;
+    width:100%;
+}
+.cimagen h4{
+    text-align: center;
+    font-size:1em;
+    color:rgba(0, 0, 0, 0.719)
+}
+.sec2 h3{
+    text-align: center;
+    color:rgb(172, 172, 172);
+    font-size: 1.2em;
+}
+.sec2 h1{
+    text-align: center;    
+    font-size: 1.7em;
+}
+.sec3{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../assets/IMAGEN-ab/index.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+.contactos{
+    display: flex;
+}
+.sec3 h1{
+    color:#fff;
+    text-align: center;
+}
+.formulario{
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    width:45%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.formulario p{
+    color: #fff;
+    text-align: center;
+}
+.formulario label{
+    margin-left: 10%;
+    font-size: 1em;
+    color:#fff
+}
+.formulario label.cel{
+    margin: 0 0 0 5px;
+}
+input{
+    outline: none;
+}
+#apellido{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:15px 10px;
+    width:60%
+}
+#nombre{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 12px 15px;
+    width:60%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] { -moz-appearance:textfield; }
+#edad{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 12px 15px;
+    width: 25px;
+}
+#dni{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 12px 15px;
+    width: 236px;
+}
+#area{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 12px 15px;
+    width: 50px;
+}
+#celular{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 3px 15px;
+    width: 98px;
+}
+#email{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin:0 12px 15px;
+    width: 40%;
+}
+.radio{
+    margin:0 0px 15px 10px;
+}
+#select{
+    margin:0 12px 15px;
+}
+textarea{
+    margin:5px 10%;
+    width:80%;
+    resize: none;
+    outline: none;
+}
+.botones{
+    width:360px;
+    margin:auto;
+}
+#submit{
+    margin: 15px;
+    color: rgba(0, 0, 255, 0.884);
+    border: 1px solid rgba(0, 0, 255, 0.884);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+#submit:hover{
+    color:#fff;
+    border: 1px solid rgba(0, 0, 255, 0.884);
+    background-color:  rgba(0, 0, 255, 0.884);
+}
+#reset{
+    color: rgba(0, 0, 255, 0.884);
+    border: 1px solid rgba(0, 0, 255, 0.884);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+#reset:hover{
+    color:#fff;
+    border: 1px solid rgba(0, 0, 255, 0.884);
+    background-color:  rgba(0, 0, 255, 0.884);
+}
+.informacion{
+    margin:0 5%
+}
+.informacion iframe{
+    width:100%;
+    height:210px;
+}
+@media screen and (max-width: 1032px){
+    #select{
+        margin:0 0 20px 10%;
+    }
+}
+@media screen and (max-width: 1011px){
+    .opcion1 ,.opcion2{
+        top:145px;
+    }
+}
+@media screen and (max-width: 800px){
+    .opcion1 ,.opcion2{
+        top:180px;
+    }
+    .barra{
+        display:inline;
+    }
+    .nav ul{
+        margin:0;
+        padding:0;
+    }
+    .nav li{
+        display: inline;
+        font-family: serif;
+        margin-bottom: 0;
+    }
+    .nav a{
+        text-decoration:none;
+        font-size:0.7em
+        
+    }
+    .listaOp a{
+        color:#fdd;
+    }
+    .lista{
+        padding:10px;
+    }
+    .nav{
+        margin-right:0;
+        display:block;
+    }
+    .formulario label{
+        display:block;        
+    }
+    #apellido,#edad,#nombre,#area,#dni,#email,.est,#calendario{
+        margin-left: 10%;
+    }
+    #area{
+        margin: 0;
+    }
+    .areas{
+        margin-left: 10%;
+    }
+    .cel{
+        margin: 10px 0;
+    }
+    .botones{
+        width: 100%;
+    }
+    #submit,#reset{
+        width: 40%;
+    }
+    .sec1 img{
+        width:90%;
+    }  
+    .descripcion{
+        display:block;
+    }
+    .mision{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 538px){    
+    .opcion1,.opcion2{
+        top:190px;
+    }
+    .botonimg{
+        width:40px;
+        padding:0;
+        height: 40px;display:flex;
+        position: relative;
+        top:100px;
+        background-color: #fff;
+        border-radius: 8px;
+    }   
+    .nav{
+        display:flex;
+        position:absolute;
+        z-index: 3;
+        top: 170px;
+        
+    }
+    .sec1 img{
+        width:90%;
+    }  
+    .descripcion{
+        display:block;
+    }
+    .mision{
+        width: 90%;
+    }
+    .cimagen{
+        width: 100%;
+    }
+    .contactos{
+        display:block;
+    }
+    .formulario{
+        width:90%
+    }
+    iframe{
+        margin-bottom: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    footer div{
+        display:block;
+    }
+    .redes{
+        display:flex;
+        justify-content:space-between;
+        width:100%
+    }
+    footer div a{
+        text-decoration: none;
+    }
+}

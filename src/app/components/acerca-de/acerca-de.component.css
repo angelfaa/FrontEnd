@@ -1,0 +1,31 @@
+@media screen and (max-width: 560px) {
+    .imagen{display:flex;
+        position:absolute;
+        top: 400px;
+        left: 25%;
+        width: 80%;
+    }
+    .info{text-align: center;}
+    span{font-size: 1.3em; display:block;}
+    h3{margin-top: 115px;
+        font-size: 1.1em; display:block;}
+    .acerca{margin-top:5px;}
+    .acerca h1,.acerca p{text-align: center;}
+}@media screen and (max-width: 850px) {
+    .info{margin-left:10px;}
+    
+    
+}
+.row1{background-image:linear-gradient(116.5deg, #00588c 20%, #0068ab 20%, #0860a8, #003872,#00295e)}
+.imagen{    
+    width:200px;
+    border-radius: 100px;
+}
+.fotito{
+    justify-content: center;
+    display:flex;
+}
+.foto{border: 1px solid;
+text-align: center;}
+h1,h3,h2{color:rgb(214, 212, 212)}
+p{color:rgb(214, 212, 212)}

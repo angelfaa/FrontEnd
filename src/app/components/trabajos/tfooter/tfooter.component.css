@@ -1,0 +1,36 @@
+
+
+footer{
+    margin-top:35px;
+}
+footer div{
+    display:flex;
+    justify-content:space-between
+}
+.redes{
+    width:50%;
+    margin-top: 20px;
+}
+.redes a{
+    color:#000;
+}
+.redes a:hover{
+    color:rgb(161, 161, 161);
+}
+.info:hover{color:rgb(175, 170, 170);}
+
+@media screen and (max-width: 538px){    
+    
+    
+    footer div{
+        display:block;
+    }
+    .redes{
+        display:flex;
+        justify-content:space-between;
+        width:100%
+    }
+    footer div a{
+        text-decoration: none;
+    }
+}

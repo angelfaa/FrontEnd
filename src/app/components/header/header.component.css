@@ -1,0 +1,59 @@
+.caja{background-image:linear-gradient(135deg, #0081a9 15%,#005189 20%, #00407e,#00407c,#003874);
+}
+.prueba{background-image:linear-gradient(135deg,rgba(0, 0, 0, 0.651),rgb(51, 51, 51),rgb(95, 95, 95) ,rgba(128, 128, 128, 0.705));}
+.caj{background-image:linear-gradient(135deg, #0081a9 15%,#005189 20%, #00407e,#00407c,#003874);
+    margin-left: 0.5%;
+    box-shadow: 5px -5px 10px 15px black;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:99%;
+    border-radius: 15px;
+}
+.derecha{display:flex;align-items: center;}
+#logo{width:200px;margin-left:-10px;}
+.redes{margin-left:10px;}
+h1{margin-top:10px;}
+a{margin: 5px;display:flex;}
+.red{
+    margin:0 5px
+}
+h1 {
+    
+    background-image: linear-gradient(90deg, rgb(13,248, 255)5%, rgb(105,154, 250)20%, rgb(153,116, 252), rgb(184,91,248),rgb(210,57,242) );
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.red:hover i{ animation:cambio1 1s forwards; }
+.btn-outline-danger:hover,.btn-outline-danger:focus{ animation:cambio 1s forwards !important;background: transparent !important; }
+i{font-size:1.5rem;color:#fff;display:flex}
+button{
+    margin-top:8px;
+    color:#fff;
+    border: 1px solid #fff
+}@keyframes cambio1{0%{color:#fff} 25%{color: rgb(228, 67, 67)}100%{color:#f00}}
+@keyframes cambio{0%{border: 1px solid #fff;color:#fff} 25%{border: 1px solid rgb(228, 67, 67);color: rgb(228, 67, 67)}100%{border: 1px solid#f00;color:#f00}}
+.col-12{
+    height: 400px;
+    margin-top:5px;
+    /*border-top-right-radius:20px ;
+    border-top-left-radius:20px ;*/
+    
+}
+@media screen and (max-width: 750px) {
+    i{font-size:1.2rem}
+    #logo{width:150px}
+    h1{font-size:1.5em}
+
+}
+@media screen and (max-width: 581px) {
+    .caj{display: block; }
+    .redes{margin-left: 5px;}
+    .derecha{margin-right: 50px;}
+    .redes,.derecha{display:flex;
+    width:100%;
+    justify-content: center;
+    }
+    .caj{width:100%;border-radius:0px;margin-left:0;}
+}

@@ -1,0 +1,64 @@
+<div class="row1">
+    <h1 class="titulo">Educacion</h1>
+    <div>
+        <button type="button" class="btn btnex" routerLink="/nuevaedu" *ngIf="isLogged"><i
+                class="bi bi-plus-circle-fill"></i> Agregar Educacion</button>
+    </div>
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 " *ngIf="!isLogged">
+                    <h2>Institucion</h2>
+                </div>
+                <div class="col-6 " *ngIf="!isLogged">
+                    <h2>Descripcion</h2>
+                </div>
+                <div class="col-6 col-md-4" *ngIf="isLogged">
+                    <h2>Institucion</h2>
+                </div>
+                <div class="col-6 col-md-4" *ngIf="isLogged">
+                    <h2>Descripcion</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6" *ngIf="!isLogged">
+                    <h4>Argentina Programa</h4>
+                </div>
+                <div class="col-6" *ngIf="!isLogged">
+                    <p>desarrollo full stack junior</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6" *ngIf="!isLogged">
+                    <h4>Digitales/ Telecom</h4>
+                </div>
+                <div class="col-6" *ngIf="!isLogged">
+                    <p>desarrollo full stack con .NET</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div *ngFor="let Experiencia of cosas" class="row">
+                <div scope="col" *ngIf="isLogged" class="col-6 col-md-4">
+                    <h4>{{Experiencia.nombreE}}</h4>
+                </div>
+                <div scope="col" *ngIf="isLogged" class="col-6 col-md-4">
+                    <p>{{Experiencia.descripcionE}}</p>
+                </div>
+                <div scope="col" *ngIf="isLogged" class="col-6 col-md-2"><button class="btn btn btn-dark"
+                        routerLink="/editedu/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i> Editar</button>
+                </div>
+                <div scope="col" *ngIf="isLogged" class="col-6 col-md-2">
+                    <button class="btn btn-danger" (click)="delete(Experiencia.id)"><i
+                            class="bi bi-trash-fill"></i>Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
